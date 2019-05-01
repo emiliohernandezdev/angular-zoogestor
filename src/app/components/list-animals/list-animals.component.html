@@ -1,0 +1,11 @@
+<h2 style="text-align:center">Animales disponibles:</h2>
+<mat-list>
+  <mat-list-item *ngFor="let animal of animales" (click)="ViewAnimal(animal)" (press)="ShowOptions(animal)">
+    <img matListAvatar src="{{animal.foto}}" alt="Foto de {{animal.nombre}}">
+    <h3 matLine> {{animal.nombre}} </h3>
+    <p matLine>
+      <span> {{animal.nombre_cientifico}} </span>
+      <span class="demo-2"> -- {{animal.tipo}} </span>
+    </p>
+  </mat-list-item>
+</mat-list>

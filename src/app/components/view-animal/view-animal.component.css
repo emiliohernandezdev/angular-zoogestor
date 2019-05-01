@@ -1,0 +1,8 @@
+.example-card {
+    max-width: 600px;
+  }
+  
+  .example-header-image {
+    background-image: url('http://millingtonlibrary.info/wp-content/uploads/2015/02/Info-I-Logo.png');
+    background-size: cover;
+  }

@@ -1,0 +1,47 @@
+<h2 style="text-align:center">Crear animal</h2>
+<div style="text-align:center">
+    <form class="add-animal-form" (ngSubmit)="saveAnimal()">
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Nombre del animal</mat-label>
+            <input matInput placeholder="Ej: Guacamaya" type="text" [(ngModel)]="animal.nombre" name="animal_name">
+            <mat-icon matSuffix>pets</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Tipo del animal</mat-label>
+            <input matInput placeholder="Ej: Ovíparo" type="text" [(ngModel)]="animal.tipo" name="animal_type">
+            <mat-icon matSuffix>pets</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Edad del animal</mat-label>
+            <input matInput placeholder="Ej: 8" type="number" [(ngModel)]="animal.edad" name="animal_age">
+            <mat-icon matSuffix>pets</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Nombre científico del animal</mat-label>
+            <input matInput placeholder="Ej: Psittacoidea" type="text" [(ngModel)]="animal.nombre_cientifico" name="animal_cientific_name">
+            <mat-icon matSuffix>pets</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Orden del animal</mat-label>
+            <input matInput placeholder="Ej: Psittaciformes" type="text" [(ngModel)]="animal.orden" name="animal_order">
+            <mat-icon matSuffix>pets</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Imagen del animal (URL)</mat-label>
+                <input matInput placeholder="Ej: www.wikipedia.org/leon.jpg" type="text" [(ngModel)]="animal.foto" name="animal_order">
+                <mat-icon matSuffix>insert_photo</mat-icon>
+            </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Información del animal</mat-label>
+            <textarea matInput  placeholder="Ej: curiosidades" type="text" [(ngModel)]="animal.info" name="animal_info" cdkTextareaAutosize></textarea>
+            <mat-icon matSuffix>info</mat-icon>
+        </mat-form-field>
+
+        <button type="submit" mat-raised-button color="primary">
+          Guardar animal
+          <mat-icon>save</mat-icon>
+        </button>
+
+    </form>
+
+</div>

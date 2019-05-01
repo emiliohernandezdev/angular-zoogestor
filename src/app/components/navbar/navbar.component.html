@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+    <span routerLink="home">Zoológico App</span>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+
+    <span>
+      <mat-menu #appMenu="matMenu">
+        <button mat-menu-item (click)="ListAnimals()">
+          Listar Animales
+          <mat-icon>pets</mat-icon>
+        </button>
+        <button mat-menu-item (click)="AddAnimal()">
+            Agregar Animal
+            <mat-icon>add</mat-icon>
+            <mat-icon>pets</mat-icon>
+          </button>
+        <button mat-menu-item>
+          Listar Encargados
+          <mat-icon>person</mat-icon>
+        </button>
+        <button mat-menu-item>
+            Agregar Encargado
+            <mat-icon>person_add</mat-icon>
+          </button>
+      </mat-menu>
+      
+      <button mat-icon-button [matMenuTriggerFor]="appMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </span>
+</mat-toolbar>

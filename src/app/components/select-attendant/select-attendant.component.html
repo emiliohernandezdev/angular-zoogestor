@@ -1,0 +1,11 @@
+<h2 style="text-align:center">Elegir encargado:</h2>
+
+<mat-list>
+    <mat-list-item *ngFor="let encargado of encargados">
+      <img matListAvatar src="{{encargado.foto}}" alt="Foto de {{encargado.nombre}}">
+      <h3 matLine> {{encargado.nombre}} </h3>
+      <p matLine>
+        <span> {{encargado.rol}} </span>
+      </p>
+    </mat-list-item>
+  </mat-list>

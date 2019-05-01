@@ -1,0 +1,26 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{data.animal.nombre}}</mat-card-title>
+      <mat-card-subtitle>{{data.animal.nombre_cientifico}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{data.animal.foto}}" alt="Foto de {{data.animal.nombre}}">
+    <mat-card-content>
+      <p><b>Nombre científico: </b>{{data.animal.nombre_cientifico}}</p>
+      <p><b>Tipo: </b>{{data.animal.tipo}}</p>
+      <p><b>Edad: </b>{{data.animal.edad}}</p>
+      <p>
+        <b>Información:</b> <br/>
+        {{data.animal.info}}
+      </p>
+    </mat-card-content>
+    <div style="text-align:center">
+        <mat-card-actions>
+            <button mat-raised-button color="accent" (click)="Close()">
+              <mat-icon>close</mat-icon>
+              Cerrar
+            </button>
+          </mat-card-actions>
+    </div>
+
+  </mat-card>
